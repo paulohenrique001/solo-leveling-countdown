@@ -1,14 +1,9 @@
 import React, {Fragment} from "react";
-import {useTranslations} from 'next-intl';
-import CountDown from "@/components/CountDown";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CountDown from "@/components/CountDown";
 
-export default function HomePage() {
-    const t = useTranslations('view-home');
-
-    console.log(t('title'));
-
+export default function Home() {
     return (
         <Fragment>
             <Header/>
