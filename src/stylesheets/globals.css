@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+html, body {
+    height: 100%;
+}
+
+nextjs-portal {
+    display: none;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background settings */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.ui-header {
+    height: 70px;
+    background-color: #161616;
+}
+
+.ui-header:after {
+    z-index: 0;
+    content: "";
+    height: 350px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    background: url(/images/divider.png) bottom no-repeat;
+}
+
+.ui-footer {
+    height: 85px;
+    background-color: #161616;
+}
+
+.font-monospace {
+    font-family: monospace, sans-serif;
+}
+
+.ui-footer:after {
+    z-index: 0;
+    content: "";
+    height: 367px;
+    display: block;
+    position: absolute;
+    rotate: 180deg;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    background: url(/images/divider.png) top no-repeat;
+}
+
+.view-home-bg {
+    background-image: url("/images/home-banner.png");
+}
+
+.view-about-bg {
+    background-image: url("/images/about-banner.png");
+}
+
+.system-bg {
+    background-size: 100% 100%;
+    background-image: url(/images/system.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.glitch {
+    position: relative;
+    color: white;
+    text-shadow: 2px 0 red, -2px 0 blue;
+    animation: glitch-animation 1.5s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background: black;
+    overflow: hidden;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 red;
+    clip-path: polygon(0% 10%, 100% 10%, 100% 25%, 0% 25%);
+    animation: glitch-before 0.5s infinite;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 blue;
+    clip-path: polygon(0% 75%, 100% 75%, 100% 90%, 0% 90%);
+    animation: glitch-after 0.5s infinite;
+}
+
+@keyframes glitch-animation {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, -2px); }
+    80% { transform: translate(2px, 2px); }
+    100% { transform: translate(0); }
+}
+
+@keyframes glitch-before {
+    0% { clip-path: polygon(0% 10%, 100% 10%, 100% 25%, 0% 25%); }
+    50% { clip-path: polygon(0% 5%, 100% 5%, 100% 20%, 0% 20%); }
+    100% { clip-path: polygon(0% 10%, 100% 10%, 100% 25%, 0% 25%); }
+}
+
+@keyframes glitch-after {
+    0% { clip-path: polygon(0% 75%, 100% 75%, 100% 90%, 0% 90%); }
+    50% { clip-path: polygon(0% 80%, 100% 80%, 100% 95%, 0% 95%); }
+    100% { clip-path: polygon(0% 75%, 100% 75%, 100% 90%, 0% 90%); }
+}
