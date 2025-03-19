@@ -14,7 +14,7 @@ const Header: React.FC = () => {
                         <div className="text-right">
                             <span className="text-2xl font-bold tracking-[0.5rem] glitch">SUNG</span>
                         </div>
-                        <div className="w-25 text-4xl font-extrabold text-center tracking-[0.25rem]">
+                        <div className="w-25 text-5xl font-extrabold text-center tracking-[0.25rem]">
                             <span className="">VS</span>
                         </div>
                         <div className="text-left">
