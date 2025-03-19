@@ -28,7 +28,7 @@ main {
 }
 
 .ui-header {
-    height: 70px;
+    height: 150px;
     background-color: #161616;
 }
 
@@ -38,20 +38,16 @@ main {
     height: 350px;
     display: block;
     position: absolute;
-    top: 35px;
+    top: 90px;
     left: 0;
     right: 0;
     background: url(/images/divider.png) bottom no-repeat;
 }
 
 .ui-footer {
-    height: 85px;
+    height: 100px;
     padding: 5px;
     background-color: #161616;
-}
-
-.font-monospace {
-    font-family: monospace, sans-serif;
 }
 
 .ui-footer:after {
@@ -61,7 +57,7 @@ main {
     display: block;
     position: absolute;
     rotate: 180deg;
-    bottom: 25px;
+    bottom: 38px;
     left: 0;
     right: 0;
     background: url(/images/divider.png) top no-repeat;
@@ -88,16 +84,12 @@ main {
     background-position: center;
 }
 
+.font-monospace {
+    font-family: monospace, sans-serif;
+}
+
 .text-shadow {
-    text-shadow: 0 0 1px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff;
-}
-
-.text-shadow-blue {
-    text-shadow: 0 0 1px #fff, 0 0 15px #1e30fa, 0 0 20px #1e30fa, 0 0 30px #1e30fa;
-}
-
-.text-shadow-red {
-    text-shadow: 0 0 1px #fff, 0 0 15px #fa1e60, 0 0 20px #fa1e60, 0 0 30px #fa1e60;
+    text-shadow: 0 0 0 #fff, 0 0 40px #fff, 0 0 0 #fff, 0 0 0 #fff;
 }
 
 .glitch {

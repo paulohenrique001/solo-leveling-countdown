@@ -8,7 +8,7 @@ export default function Home() {
         <Fragment>
             <Header/>
             <main className="view-home-bg">
-                <div className="w-full max-w-[800px] mx-auto z-[1]">
+                <div className="w-full max-w-[600px] mx-auto z-[1]">
                     <CountDown targetDate="2025-03-22T13:30:00"/>
                 </div>
             </main>

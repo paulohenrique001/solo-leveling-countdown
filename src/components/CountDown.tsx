@@ -47,23 +47,23 @@ const Countdown: React.FC<CountdownProps> = ({targetDate}) => {
         <div className="flex justify-center items-center p-4 text-gray-200 font-monospace">
             <div className="w-full grid grid-cols-4 gap-4">
                 <div className={`${days === 0 ? 'glitch' : ''} col-span-4 rounded-lg shadow-lg system-bg`}>
-                    <div className="h-[8rem] flex flex-col justify-center items-center">
+                    <div className="h-[7rem] flex flex-col justify-center items-center">
                         <span className="text-[1.3rem] md:text-[2rem] font-bold animate-pulse">{days} {viewHome('days')}</span>
                     </div>
                 </div>
                 <div className={`${hours === 0 ? 'glitch' : ''} col-span-2 rounded-lg shadow-lg system-bg`}>
-                    <div className="h-[8rem] flex flex-col justify-center items-center">
+                    <div className="h-[7rem] flex flex-col justify-center items-center">
                         <span className="text-[1.3rem] md:text-[2rem] font-bold animate-pulse">{hours} {viewHome('hours')}</span>
                     </div>
                 </div>
                 <div
                     className={`${minutes === 0 ? 'glitch' : ''} col-span-2 rounded-lg shadow-lg system-bg`}>
-                    <div className="h-[8rem] flex flex-col justify-center items-center">
+                    <div className="h-[7rem] flex flex-col justify-center items-center">
                         <span className="text-[1.3rem] md:text-[2rem] font-bold animate-pulse">{minutes} {viewHome('minutes')}</span>
                     </div>
                 </div>
                 <div className="col-span-4 rounded-lg shadow-lg system-bg">
-                    <div className="h-[8rem] flex flex-col justify-center items-center">
+                    <div className="h-[7rem] flex flex-col justify-center items-center">
                         <span className="text-[1.3rem] md:text-[2rem] font-bold animate-pulse">{seconds} {viewHome('seconds')}</span>
                     </div>
                 </div>
