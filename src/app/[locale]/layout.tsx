@@ -1,5 +1,6 @@
 import {routing} from '@/i18n/routing';
 import {notFound} from 'next/navigation';
+import {Analytics} from '@vercel/analytics/next';
 import {hasLocale, NextIntlClientProvider} from 'next-intl';
 
 import "@/stylesheets/globals.css";
@@ -26,6 +27,7 @@ export default async function LocaleLayout({children, params}: {
         <NextIntlClientProvider>
             {children}
         </NextIntlClientProvider>
+        <Analytics/>
         </body>
         </html>
     );
