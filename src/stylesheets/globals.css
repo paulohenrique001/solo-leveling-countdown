@@ -40,7 +40,7 @@ main {
     height: 350px;
     display: block;
     position: absolute;
-    top: 90px;
+    top: 80px;
     left: 0;
     right: 0;
     background: url(/images/divider.png) bottom no-repeat;
@@ -59,7 +59,7 @@ main {
     display: block;
     position: absolute;
     rotate: 180deg;
-    bottom: 32px;
+    bottom: 28px;
     left: 0;
     right: 0;
     background: url(/images/divider.png) top no-repeat;
