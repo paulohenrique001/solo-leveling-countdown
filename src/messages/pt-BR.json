@@ -6,6 +6,7 @@
     "seconds": "SEGUNDOS"
   },
   "view-about": {
-    "title": "CRIADO POR"
+    "title": "CRIADO POR",
+    "assets": "Ativos de"
   }
 }

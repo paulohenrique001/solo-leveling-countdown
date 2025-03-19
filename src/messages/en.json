@@ -6,6 +6,7 @@
     "seconds": "SECONDS"
   },
   "view-about": {
-    "title": "CREATED BY"
+    "title": "CREATED BY",
+    "assets": "Assets by"
   }
 }
