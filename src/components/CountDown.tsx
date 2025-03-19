@@ -2,6 +2,7 @@
 
 import {useEffect, useState} from "react";
 import {useTranslations} from "next-intl";
+import {useRouter} from "next/navigation";
 
 interface CountdownProps {
     targetDate: string;
@@ -13,6 +14,7 @@ const Countdown: React.FC<CountdownProps> = ({targetDate}) => {
     const [minutes, setMinutes] = useState<number>(0);
     const [seconds, setSeconds] = useState<number>(0);
 
+    const router = useRouter();
     const viewHome = useTranslations('view-home');
 
     useEffect(() => {
@@ -22,6 +24,7 @@ const Countdown: React.FC<CountdownProps> = ({targetDate}) => {
             const difference = target.getTime() - now.getTime();
 
             if (difference <= 0) {
+                router.push('https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling');
                 return;
             }
 
